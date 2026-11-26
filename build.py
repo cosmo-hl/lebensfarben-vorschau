@@ -278,7 +278,7 @@ def start():
 </div></section>
 
 <section class="section sage"><div class="wrap">
-  <div class="section-head reveal"><p class="eyebrow">Angebot</p><h2>Einzeln, in der Gruppe, vor Ort oder online</h2></div>
+  <div class="section-head reveal"><p class="eyebrow">Angebot</p><h2>Einzeln, in Wismar oder online</h2></div>
   <ul class="prices reveal">
     <li class="price"><span class="tag">50 Minuten</span><h3>Somatic Experiencing</h3><p class="amount">90 € <small>je Sitzung</small></p><p>Traumasensible, körperorientierte Einzelsitzungen (Psychotherapie nach dem Heilpraktikergesetz).</p></li>
     <li class="price"><span class="tag">50 Minuten</span><h3>Nervensystem­regulation</h3><p class="amount">90 € <small>je Sitzung</small></p><p>Anti-Stress-Begleitung, um wieder in Balance zu kommen. Auch bei Neurodivergenz.</p></li>
