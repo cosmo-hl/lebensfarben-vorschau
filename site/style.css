@@ -119,7 +119,8 @@ strong { font-weight: 600; }
   .js .main-nav .nav-cta a { justify-content: center; font-family: var(--sans); font-size: 1.05rem; color: #fff; }
   html:not(.js) .main-nav ul { flex-direction: row; flex-wrap: wrap; gap: 0 1.2rem; }
 }
-@media (max-width: 520px) { .brand-sub-more { display: none; } .site-header .wrap { gap: .5rem; } }
+@media (max-width: 520px) { .site-header .wrap { gap: .5rem; flex-wrap: nowrap; } .brand-sub { font-size: .74rem; white-space: nowrap; } .brand-sub b { font-size: .98rem; } .menu-toggle > span:first-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .menu-toggle { padding: 0 .5rem; min-width: 44px; justify-content: center; } }
+@media (max-width: 520px) { .js .main-nav { width: auto; } }
 @media (max-width: 360px) { .brand-name { font-size: 1.35rem; } }
 
 /* Knöpfe */

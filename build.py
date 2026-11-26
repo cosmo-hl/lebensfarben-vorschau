@@ -178,9 +178,9 @@ def layout(slug, title, desc, body, active=None, crumbs=None, extra_ld=None):
 <script>
 (function(){{
   var root=document.documentElement,header=document.querySelector('.site-header');
-  function setH(){{if(header)root.style.setProperty('--header-h',header.offsetHeight+'px');}}
+  function setH(){{if(header)root.style.setProperty('--header-h',Math.round(header.getBoundingClientRect().bottom)+'px');}}
   setH();addEventListener('resize',setH);
-  function onScroll(){{if(header)header.classList.toggle('is-scrolled',scrollY>8);}}
+  function onScroll(){{if(header)header.classList.toggle('is-scrolled',scrollY>8);setH();}}
   onScroll();addEventListener('scroll',onScroll,{{passive:true}});
   var btn=document.querySelector('.menu-toggle'),nav=document.getElementById('hauptmenue');
   if(btn&&nav){{
