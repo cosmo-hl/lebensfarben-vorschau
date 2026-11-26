@@ -222,21 +222,23 @@ def page(slug):
 def start():
     r = ''
     body = f'''
+<section class="hero-pair" aria-label="Weite und Raum"><div class="wrap">
+  <div class="pair">
+    <figure class="pair-weite">{img(r, 'weite', 'Dünengras vor der Ostsee unter weitem Himmel', 1600, 1310, '(min-width: 1160px) 700px, 60vw', loading='eager')}<figcaption>Weite</figcaption></figure>
+    <figure class="pair-raum">{img(r, 'raum', 'Heller Praxisraum mit Sesseln, Sofa und Blick aus dem Fenster ins Grüne', 1200, 1600, '(min-width: 1160px) 430px, 40vw', loading='eager')}<figcaption>Raum</figcaption></figure>
+  </div>
+</div></section>
+
 <section class="hero"><div class="wrap">
   <div class="hero-grid">
-    <div class="hero-text">
+    <div>
       <p class="eyebrow">Somatic Experiencing® in Wismar und online</p>
       <h1>Raum für das, was Worte <em>nicht</em> erreichen.</h1>
+    </div>
+    <div>
       <p class="lead">Sie haben schon viel verstanden. Und trotzdem holen alte Gefühle und Muster Sie immer wieder ein? Mit Somatic Experiencing beziehen wir den Körper ein, dort, wo alte Reaktionen gespeichert sind. In Ihrem Tempo, in kleinen, sicheren Schritten.</p>
       <div class="cta-row">{btn_kontakt(r)}<a class="btn btn--ghost" href="somatic-experiencing/">Was ist Somatic Experiencing?</a></div>
       <p class="hero-aside"><strong>Kristin Damaschke</strong> · Somatic Experiencing® in Ausbildung · Heilpraktikerin für Psychotherapie · Kunsttherapeutin (M.A.) · viele Jahre Erfahrung in Kliniken</p>
-    </div>
-    <div class="duo" role="group" aria-label="Weite und Raum: Dünen an der Ostsee und der Praxisraum mit Blick nach draußen">
-      <span class="duo-blob duo-blob--a" aria-hidden="true"></span>
-      <span class="duo-blob duo-blob--b" aria-hidden="true"></span>
-      <figure class="duo-weite">{img(r, 'weite', 'Dünengras vor der Ostsee unter weitem Himmel', 1600, 1310, '(min-width: 1100px) 440px, 75vw', loading='eager')}</figure>
-      <figure class="duo-raum">{img(r, 'raum', 'Heller Praxisraum mit Sesseln, Sofa und Blick aus dem Fenster ins Grüne', 1200, 1600, '(min-width: 1100px) 300px, 50vw', loading='eager')}</figure>
-      <p class="duo-caption"><span>Weite</span> <i aria-hidden="true">&amp;</i> <span>Raum</span></p>
     </div>
   </div>
 </div></section>
