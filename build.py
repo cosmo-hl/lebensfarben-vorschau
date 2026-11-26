@@ -291,7 +291,7 @@ def start():
 </div></section>
 {closing(r)}
 '''
-    return layout('', 'Kristin Damaschke · Lebensfarben · Körper- und Kunsttherapie in Wismar',
+    return layout('', 'Kristin Damaschke · Lebensfarben · Somatic Experiencing in Wismar und online',
                   'Traumasensible, körperorientierte Begleitung mit Somatic Experiencing und Kunsttherapie in Wismar und online. Für Menschen, die schon viel verstanden haben und trotzdem von alten Mustern eingeholt werden.', body)
 
 
