@@ -51,7 +51,7 @@ Eine Hausärztin oder eine Kollegin will in einer Minute wissen: Qualifikation, 
 ### 1.4 Marketing
 
 - **Positionierung schärfen:** Weg von „Psychotherapie, Coaching und Nervensystemregulation“ (drei Dinge, keines klar) hin zu einem Versprechen: *Raum für das, was Worte nicht erreichen. Somatic Experiencing bei Wismar und online.* Somatic Experiencing ist das Thema, mit dem Kristin unterscheidbar wird und für das es in Wismar kaum Anbieterinnen gibt. Die Kunst ist ihr stiller Begleiter: Sie zeigt sich in der Bildsprache der Seite und als Einladung in den Stunden.
-- **Leichtigkeit zeigen:** Das lachende Porträt steht auf der Startseite neben dem Satz „Ernstes darf auch leicht werden.“ Das nimmt Schwellenangst, gerade bei Menschen, die Therapie schon als schwer erlebt haben.
+- **Leichtigkeit zeigen:** Auf der Startseite steht der Satz „Ernstes darf auch leicht werden.“, das lachende Porträt auf der Kontaktseite. Das nimmt Schwellenangst, gerade bei Menschen, die Therapie schon als schwer erlebt haben.
 - **Drei Themenfelder statt 18 Punkte:** (1) Alte Muster und wiederkehrende Gefühle, (2) Stress, Erschöpfung und ein überlastetes Nervensystem, (3) Belastende Erfahrungen und Trauma. Jedes Feld mit einem Satz in Klientinnensprache.
 - **Ein Hauptweg zum Kontakt:** überall derselbe Knopf „Kennenlernen vereinbaren“. Telefon, WhatsApp und E-Mail als gleichwertige Wege auf der Kontaktseite.
 - **Einheitliche Kanäle:** Heute erscheinen drei Instagram-Namen (`lebensfarben_kunst`, `lebensfarben_psychotherapie`, `kristindamaschke_art`). Empfehlung: ein Konto für die Praxis, eines für die Kunst, auf jeder Seite gleich verlinkt.
@@ -118,7 +118,7 @@ Die beiden Punkte zu Kontaktlinks und Impressum würde ich Kristin unabhängig v
 
 Die bisherigen Adressen bleiben gleich. Nur der Schrägstrich am Ende kommt dazu; GitHub Pages leitet `/angebot` automatisch dauerhaft (301) auf `/angebot/` weiter.
 
-Hauptmenü (sechs Punkte): Wofür · Somatic Experiencing · Angebot & Preise · Über mich · Kunst · Kontakt, dazu der Knopf „Kennenlernen“. „Kunsttherapie“ (gleiche Adresse wie heute, damit bestehende Google-Treffer bleiben) und „Häufige Fragen“ stehen in der Fußzeile und werden aus den Texten verlinkt.
+Hauptmenü (sechs Punkte, Logo: „Kristin Damaschke · Lebensfarben · Somatic Experiencing“): Wofür · Somatic Experiencing · Angebot & Preise · Über mich · Kunst · Kontakt, dazu der Knopf „Kennenlernen“. „Kunsttherapie“ (gleiche Adresse wie heute, damit bestehende Google-Treffer bleiben) und „Häufige Fragen“ stehen in der Fußzeile und werden aus den Texten verlinkt.
 
 ## 3. Designkonzept
 
@@ -126,8 +126,9 @@ Hauptmenü (sechs Punkte): Wofür · Somatic Experiencing · Angebot & Preise ·
 
 - **Nah an dr-tiffert.de:** dasselbe tiefe Grün als Grundfarbe, klare Linien, Cormorant Garamond für Überschriften, Inter für Fließtext, großzügiger Weißraum.
 - **Einfacher und wärmer als dr-tiffert.de:** keine dunklen Vollflächen im Seitenkopf, sondern warmes Papierweiß; Knöpfe in normaler Schreibweise statt Großbuchstaben; leicht abgerundete Ecken; ein warmer Akzent (Terrakotta) aus Kristins Aquarellen, sparsam eingesetzt; keine Animation außer sanftem Einblenden.
-- **Farben:** Waldgrün `#2F4A40`, Salbei `#DCE5DC`, Papier `#F8F5EF`, Sand `#E9DFCF`, Terrakotta `#B5603F` (nur für kleine Akzente), Text `#26302C`.
-- **Bilder:** Das Bildpaar bleibt als Diptychon (Weite links, Raum rechts) direkt unter dem Einstiegssatz. Kristins Aquarelle tragen die Unterseiten als ruhige Bildbänder. Neue Porträts (Fotos: Alexander Tiffert): lachend auf der Startseite, ruhig in rostroter Bluse auf „Über mich“, frontal und freundlich auf „Kontakt“. Alle Bilder haben Alt-Texte.
+- **Farben:** weiches Salbeigrün `#46655A`, Salbei hell `#E3EBE2`, Papier `#FBF7F1`, Puder `#F5E6DE`, Rosé `#E7C3B4`, Terrakotta `#B8694A` (Knöpfe und betonte Wörter), Text `#2E3532`.
+- **Weiblicher, nicht technisch (Rückmeldung 26.11.2026):** Bögen und runde Formen statt Kästen, Knöpfe als Pillen in Terrakotta, Kapitelzeilen kursiv statt in Großbuchstaben, einzelne Wörter in Überschriften kursiv betont, weiche Aquarell-Kreise als Begleiter, kaum Trennlinien. Auf der Startseite verbinden sich Weite und Raum zu einer Komposition: das Meer als Bogenfenster, der Praxisraum davor, sodass der Blick aus dem Zimmer in die Weite geht.
+- **Bilder:** Das Bildpaar bleibt als Diptychon (Weite links, Raum rechts) direkt unter dem Einstiegssatz. Kristins Aquarelle tragen die Unterseiten als ruhige Bildbänder. Neue Porträts (Fotos: Alexander Tiffert): frontal in der lila Bluse auf der Startseite, ruhig in rostroter Bluse auf „Über mich“, lachend auf „Kontakt“. Alle Bilder haben Alt-Texte.
 - **Lesbarkeit:** große Schrift (18 bis 19 px Fließtext), kurze Absätze, Kontrast nach WCAG AA, funktioniert auf dem Handy mit einer Hand.
 - **Ein Weg zum Kontakt:** Der Knopf „Kennenlernen“ steht oben rechts und am Ende jeder Seite.
 - **Technik:** statische Seite, selbst gehostete Schriften, keine Cookies, kein Tracking, keine Inhalte Dritter. Schnell und datenschutzfreundlich.

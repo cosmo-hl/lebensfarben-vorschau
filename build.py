@@ -137,7 +137,7 @@ def layout(slug, title, desc, body, active=None, crumbs=None, extra_ld=None):
 <div class="preview-bar"><div class="wrap"><span><strong>Vorschau</strong> · Entwurf für eine neue Seite von Kristin Damaschke. Texte sind Vorschläge.</span><span><a href="{r}konzept/">Analyse und Konzept</a> · <a href="https://www.lebensfarben.net/" rel="nofollow">Aktuelle Seite</a></span></div></div>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{r or './'}"><span class="brand-name">Kristin Damaschke</span><span class="brand-sub"><b>Lebensfarben</b><span class="brand-sub-more"> · Somatic Experiencing bei Wismar</span></span><span class="visually-hidden">, zur Startseite</span></a>
+    <a class="brand" href="{r or './'}"><span class="brand-name">Kristin Damaschke</span><span class="brand-sub"><b>Lebensfarben</b><span class="brand-sub-more"> · Somatic Experiencing</span></span><span class="visually-hidden">, zur Startseite</span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue"><span>Menü</span><span class="bars" aria-hidden="true"></span></button>
     <nav class="main-nav" id="hauptmenue" aria-label="Hauptmenü"><ul>{nav}<li class="nav-cta"><a href="{r}kontakt/#kennenlernen">Kennenlernen</a></li></ul></nav>
   </div>
@@ -203,8 +203,8 @@ def page_head(r, eyebrow, h1, lead, crumb=None):
     return f'''<section class="page-head"><div class="wrap">{c}<p class="eyebrow">{eyebrow}</p><h1>{h1}</h1><p class="lead">{lead}</p></div></section>'''
 
 
-def closing(r, h='Lernen wir uns kennen.', p='Ein erstes Gespräch am Telefon dauert etwa 15 Minuten. Sie erzählen kurz, was Sie bewegt, und wir klären, ob meine Arbeit zu Ihnen passt. Ganz ohne Verpflichtung.'):
-    return f'''<section class="closing center"><div class="wrap"><h2>{h}</h2><p>{p}</p><div class="cta-row">{btn_kontakt(r, cls='btn btn--light')}<a class="btn btn--ghost" style="color:#fff;border-color:rgba(255,255,255,.6)" href="{WA}">WhatsApp schreiben</a></div></div></section>'''
+def closing(r, h='Lernen wir uns <em>kennen</em>.', p='Ein erstes Gespräch am Telefon dauert etwa 15 Minuten. Sie erzählen kurz, was Sie bewegt, und wir klären, ob meine Arbeit zu Ihnen passt. Ganz ohne Verpflichtung.'):
+    return f'''<section class="closing center"><div class="wrap"><div class="closing-card"><span class="duo-blob duo-blob--c" aria-hidden="true"></span><h2>{h}</h2><p>{p}</p><div class="cta-row">{btn_kontakt(r, cls='btn btn--light')}<a class="btn btn--ghost btn--on-dark" href="{WA}">WhatsApp schreiben</a></div></div></div></section>'''
 
 
 PAGES = {}
@@ -226,20 +226,23 @@ def start():
   <div class="hero-grid">
     <div class="hero-text">
       <p class="eyebrow">Somatic Experiencing® in Wismar und online</p>
-      <h1>Raum für das, was Worte nicht erreichen.</h1>
+      <h1>Raum für das, was Worte <em>nicht</em> erreichen.</h1>
       <p class="lead">Sie haben schon viel verstanden. Und trotzdem holen alte Gefühle und Muster Sie immer wieder ein? Mit Somatic Experiencing beziehen wir den Körper ein, dort, wo alte Reaktionen gespeichert sind. In Ihrem Tempo, in kleinen, sicheren Schritten.</p>
       <div class="cta-row">{btn_kontakt(r)}<a class="btn btn--ghost" href="somatic-experiencing/">Was ist Somatic Experiencing?</a></div>
       <p class="hero-aside"><strong>Kristin Damaschke</strong> · Somatic Experiencing® in Ausbildung · Heilpraktikerin für Psychotherapie · Kunsttherapeutin (M.A.) · viele Jahre Erfahrung in Kliniken</p>
     </div>
-    <div class="diptych" role="group" aria-label="Weite und Raum">
-      <figure class="weite">{img(r, 'weite', 'Dünengras vor der Ostsee unter weitem Himmel', 1600, 1200, '(min-width: 1100px) 300px, 50vw', loading='eager')}<figcaption>Weite</figcaption></figure>
-      <figure class="raum">{img(r, 'raum', 'Heller Praxisraum mit Sesseln, Sofa und Blick aus dem Fenster ins Grüne', 1200, 1600, '(min-width: 1100px) 300px, 50vw', loading='eager')}<figcaption>Raum</figcaption></figure>
+    <div class="duo" role="group" aria-label="Weite und Raum: Dünen an der Ostsee und der Praxisraum mit Blick nach draußen">
+      <span class="duo-blob duo-blob--a" aria-hidden="true"></span>
+      <span class="duo-blob duo-blob--b" aria-hidden="true"></span>
+      <figure class="duo-weite">{img(r, 'weite', 'Dünengras vor der Ostsee unter weitem Himmel', 1600, 1310, '(min-width: 1100px) 440px, 75vw', loading='eager')}</figure>
+      <figure class="duo-raum">{img(r, 'raum', 'Heller Praxisraum mit Sesseln, Sofa und Blick aus dem Fenster ins Grüne', 1200, 1600, '(min-width: 1100px) 300px, 50vw', loading='eager')}</figure>
+      <p class="duo-caption"><span>Weite</span> <i aria-hidden="true">&amp;</i> <span>Raum</span></p>
     </div>
   </div>
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section-head reveal"><p class="eyebrow">Wofür</p><h2>Vielleicht erkennen Sie sich wieder</h2><p class="lead muted">Viele, die zu mir kommen, stehen mitten im Leben. Sie sind beruflich erfolgreich, reflektiert, oft therapieerfahren. Und merken doch: Etwas in mir reagiert schneller, als ich denken kann.</p></div>
+  <div class="section-head reveal"><p class="eyebrow">Wofür</p><h2>Vielleicht erkennen Sie sich <em>wieder</em></h2><p class="lead muted">Viele, die zu mir kommen, stehen mitten im Leben. Sie sind beruflich erfolgreich, reflektiert, oft therapieerfahren. Und merken doch: Etwas in mir reagiert schneller, als ich denken kann.</p></div>
   <ul class="cards">
     <li class="card reveal"><p class="quote-line">„Ich weiß, woher es kommt. Und trotzdem passiert es wieder.“</p><h3>Alte Muster, die wiederkehren</h3><p>Wenn Einsicht allein nicht reicht: Wir arbeiten dort, wo alte Reaktionen gespeichert sind: im Körper und im Nervensystem.</p><a class="more" href="wofuer/#muster">Mehr dazu {ARROW}</a></li>
     <li class="card reveal"><p class="quote-line">„Ich funktioniere. Aber ich komme nicht mehr zur Ruhe.“</p><h3>Stress und Erschöpfung</h3><p>Ein dauerhaft angespanntes Nervensystem kann lernen, wieder zwischen Anspannung und Entspannung zu pendeln.</p><a class="more" href="wofuer/#stress">Mehr dazu {ARROW}</a></li>
@@ -249,7 +252,7 @@ def start():
 
 <section class="section white"><div class="wrap">
   <div class="split">
-    <div class="split-head reveal"><p class="eyebrow">Mein Ansatz</p><h2>Was hier anders ist als im Gespräch allein</h2><p class="kicker">Nicht noch einmal erzählen, sondern spüren, was sich verändern möchte.</p></div>
+    <div class="split-head reveal"><p class="eyebrow">Mein Ansatz</p><h2>Was hier anders ist als im <em>Gespräch</em> allein</h2><p class="kicker">Nicht noch einmal erzählen, sondern spüren, was sich verändern möchte.</p></div>
     <div class="reveal">
       <ul class="points">
         <li><strong>Der Körper spricht mit</strong>Mit Somatic Experiencing achten wir auf Empfindungen, Atem und Haltung. So kann sich lösen, was der Kopf längst verstanden hat.</li>
@@ -261,14 +264,14 @@ def start():
   </div>
 </div></section>
 
-<figure class="band" aria-hidden="false">{img(r, 'art-erde', 'Aquarell von Kristin Damaschke in Ocker, Salbeigrün, Hellblau und Terrakotta', 1600, 850)}</figure>
+<figure class="band contained">{img(r, 'art-erde', 'Aquarell von Kristin Damaschke in Ocker, Salbeigrün, Hellblau und Terrakotta', 1600, 850)}</figure>
 
 <section class="section"><div class="wrap">
   <div class="split media-right">
-    <div class="split-media portrait reveal"><figure>{img(r, 'kristin-lachend', 'Kristin Damaschke lacht herzlich in die Kamera', 1600, 2000, '(min-width: 960px) 460px, 100vw')}</figure></div>
+    <div class="split-media portrait reveal"><figure>{img(r, 'kristin-lila', 'Kristin Damaschke in lila gemusterter Bluse, sie schaut ruhig und offen in die Kamera', 1600, 2000, '(min-width: 960px) 460px, 100vw')}</figure></div>
     <div class="reveal">
       <p class="eyebrow">Über mich</p>
-      <h2>Ernstes darf auch leicht werden.</h2>
+      <h2>Ernstes darf auch <em>leicht</em> werden.</h2>
       <p class="lead">Ich bin Kristin Damaschke, Heilpraktikerin für Psychotherapie, Kunsttherapeutin und in Ausbildung zur Somatic-Experiencing-Practitioner. Seit 2021 lebe und arbeite ich bei Wismar.</p>
       <p>Auch wenn es um schwere Themen geht: In meinen Stunden darf gelacht werden. Leichtigkeit ist kein Gegensatz zu Tiefe, oft ist sie ein Zeichen, dass sich etwas löst.</p>
       <p>Viele Jahre habe ich in psychiatrischen und psychosomatischen Kliniken gearbeitet, unter anderem in den Sana Kliniken Lübeck und im Klinikum Schloss Lütgenhof. Dort habe ich erlebt, wie viel sich bewegt, wenn Menschen einen Zugang jenseits der Worte finden. Heute arbeite ich vor allem körperorientiert mit Somatic Experiencing.</p>
@@ -354,7 +357,7 @@ def wofuer():
 @page('somatic-experiencing/')
 def se():
     r = '../'
-    body = page_head(r, 'Somatic Experiencing® (SE)', 'Mit dem Körper lösen, was Worte oft nicht erreichen', 'Somatic Experiencing ist ein körperorientierter Ansatz zur Lösung von Stress- und Traumafolgen, entwickelt von Dr. Peter A. Levine. Er ist der Schwerpunkt meiner Arbeit.', 'Somatic Experiencing') + f'''
+    body = page_head(r, 'Somatic Experiencing® (SE)', 'Mit dem Körper lösen, was Worte oft <em>nicht</em> erreichen', 'Somatic Experiencing ist ein körperorientierter Ansatz zur Lösung von Stress- und Traumafolgen, entwickelt von Dr. Peter A. Levine. Er ist der Schwerpunkt meiner Arbeit.', 'Somatic Experiencing') + f'''
 <figure class="band contained">{img(r, 'art-tuerkis', 'Aquarell von Kristin Damaschke in Türkis, Magenta und Rotbraun', 1600, 600)}</figure>
 
 <section class="section"><div class="wrap">
@@ -370,7 +373,7 @@ def se():
 
 <section class="section green"><div class="wrap">
   <div class="split">
-    <div class="split-head"><p class="eyebrow">Warum der Körper?</p><h2>Verstanden ist noch nicht verändert</h2></div>
+    <div class="split-head"><p class="eyebrow">Warum der Körper?</p><h2>Verstanden ist noch nicht <em>verändert</em></h2></div>
     <div>
       <p class="lead">Viele Menschen, die zu mir kommen, haben schon viel an sich gearbeitet. Sie können ihre Muster benennen. Trotzdem schlägt der Körper Alarm, bevor der Kopf eingreifen kann.</p>
       <p>Das liegt daran, dass Stress- und Schutzreaktionen nicht im Denken entstehen, sondern im Nervensystem. Somatic Experiencing arbeitet deshalb „von unten nach oben“: Wir geben dem Körper Gelegenheit, eine neue Erfahrung zu machen, etwa dass Anspannung kommen und wieder gehen darf. Das Verstehen, das Sie schon mitbringen, bekommt so ein Fundament.</p>
@@ -735,7 +738,7 @@ def kontakt():
 
 <section class="section white"><div class="wrap">
   <div class="split media-right">
-    <div class="split-media portrait"><figure>{img(r, 'kristin-frontal', 'Kristin Damaschke lächelt freundlich in die Kamera', 1600, 2000, '(min-width: 960px) 460px, 100vw')}</figure></div>
+    <div class="split-media portrait"><figure>{img(r, 'kristin-lachend', 'Kristin Damaschke lacht herzlich in die Kamera', 1600, 2000, '(min-width: 960px) 460px, 100vw')}</figure></div>
     <div>
       <p class="eyebrow">Praxis</p>
       <h2>Lebensfarben · Praxis für Somatic Experiencing</h2>
